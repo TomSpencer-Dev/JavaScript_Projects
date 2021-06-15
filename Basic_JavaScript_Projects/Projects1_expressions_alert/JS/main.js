@@ -15,4 +15,8 @@ var T = T.fontcolor("blue"), C = C.fontcolor("Red"), D= D.fontcolor("Green");//U
 
 document.write(D) //Using document.write to display variable
 
-<br>document.write(5*4) //Displaying the result of a multiplication expression</br>
+document.write(5*4) //Displaying the result of a multiplication expression
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
