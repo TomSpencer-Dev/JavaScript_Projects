@@ -13,5 +13,6 @@ function myFunction() {      //Defining a function and naming it
 
 function Multiply(p1, p2) {  //defining a function and naming it
     return p1 * p2; //The function returns the product of p1 and p2
-document.getElementById("demo").innerHTML = Multiply(4, 7);
 }
+
+document.getElementById("demo").innerHTML = Multiply(4, 7);
