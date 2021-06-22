@@ -45,3 +45,4 @@ function myFunction7() {
     var n = num.valueOf();
     document.getElementById("primitive").innerHTML = n;
 }
+
