@@ -1,0 +1,37 @@
+<!DOCTYPE html><!-- sets the document to html 5 -->
+<html lang="en"> <!-- sets document to html and the language to english -->
+    <head>
+        <title>jQuery</title> <!-- sets the title to jQuery to apper on the tab in the browsing window -->
+        <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    </body>
+    
+    <script>
+    $(document).ready(function() { //calls jQuery function and selects entire document
+        $("html").append( //selects the html tag and tells it to appear on the screen
+            "<body>\
+                <div id='container'>\
+                    <div id ='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id ='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"});//P ID 2 changes color to red
+        $("#3").click(function() {//p ID 3 will hide h1 when clicked. It will slowly fade
+            $('h1').hide("slow");
+        });
+        $("#1").click(function() {//function for p id 1 for when it is clicked
+            console.log("You clicked a paragraph!"); //when p id 1 is clicked. the message will display in the console view
+        });
+
+    });
+    
+
+    </script>
+</html>
