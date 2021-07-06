@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do APp</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/todo.css">
+    </head>
+
+    <body>
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+
+        
+    
+    <p id="myCar"></p>
+
+    <script>
+        var car = {make: "Toyota", model: "Corolla", color: "black"};
+        var JSONstring = JSON.stringify(car);
+        document.getElementById("myCar").innerHTML = JSONstring;
+        </script>
+
+    <p>The value of "vehicle" is:</p>
+    
+    <p id="demo1"></p>
+
+    <script>
+        var obj = JSON.parse('{"vehicle": "Corolla", "Make":"Toyota"}');
+
+        document.getElementById("demo1").innerHTML = obj.vehicle;
+
+    </script>
+
+    <p id="myCoffee"></p>
+
+    <script>
+        localStorage.setItem("Name", "Americano");
+        document.getElementById("myCoffee").innerHTML = localStorage.getItem("Name");
+    </script>
+
+    <div class="demo">
+    <footer>
+        <p>Author: Tom Spencer</p>
+        <a href="https://www.linkedin.com/in/thomas-spencer-5211861b3">LinkedIn</a>
+    </footer>
+    </div>
+
+
+<script src="js/todo.js"></script>
+</body>
+
+    </html>

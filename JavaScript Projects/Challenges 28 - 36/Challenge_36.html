@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Sticky Button</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Challenge_36.css">
+    </head>
+
+    <body>
+
+        <div class="sticky">
+
+            <button class="open-button" onclick="openForm()">Open Form</button>
+
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+                <h1>Contact</h1>
+
+                <label for="fname"><b>Full Name</b></label>
+                <input type="text" placeholder="Enter Full Name" name="fname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel
+                onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display ="block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").sty;le.display = "none";
+            }
+        </script>
+    
+    </body>
+</html>
