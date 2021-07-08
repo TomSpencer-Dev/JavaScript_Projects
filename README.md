@@ -1,6 +1,6 @@
 # JavaScript_Projects
 
-These are some small projects I made using JavaScript
+These are some small projects I made using JavaScript.
 
 <h2>Projects</h2>
 
