@@ -1,4 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Ondbclick
+        <title>Ondbclick</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <p id="example" ondblclick="myFunction()">Double Click</p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("example").innerHTML = "Hello Tom!";
+            }
+        </script>
+    </body>
+</html>

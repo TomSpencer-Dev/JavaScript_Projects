@@ -27,7 +27,7 @@ function add() {
     todos.push(task);
     localStorage.setItem('todo', JSON.stringify(todos));
     document.getElementById("task").value = "";
-    Show();
+    show();
 
     return false;
 
